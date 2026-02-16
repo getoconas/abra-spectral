@@ -1,0 +1,25 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# --- Datos (Lo más importante) ---
+# No queremos subir gigas de música ni resultados temporales
+data/input/*
+data/output/*
+# Pero queremos mantener las carpetas creadas, así que ignoramos todo menos un .gitkeep
+!data/input/.gitkeep
+!data/output/.gitkeep
+
+# --- Modelos ---
+# Los archivos .pth pueden ser pesados. 
+# Si querés subir el generalista de 1.8MB podés comentarlo, pero lo ideal es no subir binarios.
+*.pth
+
+# --- Varios ---
+.vscode/
+.idea/
+*.log
+.DS_Store
